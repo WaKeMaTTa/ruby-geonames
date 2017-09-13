@@ -1,4 +1,4 @@
-# Geonames Ruby API
+# Geonames Ruby API [![Build Status](https://api.travis-ci.org/mceachen/ruby-geonames.png?branch=master)](https://travis-ci.org/mceachen/ruby-geonames)
 
 Ruby library for [Geonames Web Services](http://www.geonames.org/export/)
 
@@ -6,15 +6,7 @@ Created by [TouchBase Counsulting](http://www.tbcn.ca/geonames) to support GIS p
 
 ## Installing ruby-geonames
 
-Add this to your Gemfile:
-
-    gem 'ruby-geonames'
-
-And run:
-	
-	bundle install
-
-Or install from the command line:
+Install from the command line:
 
     sudo gem install ruby-geonames
 
@@ -79,7 +71,6 @@ In a Rails application, you could set the language from the I18n.locale:
 If you use the commercial service, you should put something like this in your configuration:
 
     Geonames.username = 'username'
-    Geonames.password = 'password'
     Geonames.base_url = 'http://ws.geonames.net'
 
 In a Rails application, this could go into `config/initializers/geonames.rb`.
@@ -88,5 +79,4 @@ In a Rails application, this could go into `config/initializers/geonames.rb`.
 
     1. Adam Wisniewski
     2. Nicolas Marchildon (elecnix)
-    2. Rahul Ghose (rghose)
-
+    3. Chris Griego

@@ -1,6 +1,6 @@
 #=============================================================================
 #
-# Copyright 2010 Jan Schwenzien <jan@schwenzien.info>
+# Copyright 2007 Adam Wisniewski <adamw@tbcn.ca>
 # Contributions by Chris Griego
 #
 # Licensed under the Apache License, Version 2.0 (the "License"); you may not
@@ -18,28 +18,10 @@
 #=============================================================================
 
 module Geonames
-  class Config
-    @@default_base_url = "http://api.geonames.org"
-    @@default_lang     = "en"
-    @@default_username = nil
-    @@default_token    = nil
-
-    attr_writer :base_url, :lang, :username, :token
-
-    def base_url
-      @base_url || @@default_base_url
-    end
-
-    def lang
-      @lang || @@default_lang
-    end
-
-    def username
-      @username || @@default_username
-    end
-
-    def token
-      @token || @@default_token
-    end
+  class WikipediaArticle
+    attr_accessor :language, :title, :summary,
+                  :wikipedia_url, :feature, :population,
+                  :elevation, :latitude, :longitude,
+                  :thumbnail_img, :distance
   end
 end
